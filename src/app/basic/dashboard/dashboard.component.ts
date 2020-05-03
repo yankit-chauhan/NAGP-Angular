@@ -39,7 +39,6 @@ export class DashboardComponent implements OnInit {
   }
   getDistrictData(row: IDistributedData) {
     this.districtData = this.dashboardService.getDistrictData(this.districtsData, row.statecode);
-    console.log(this.districtData);
   }
 
   scrollTo(className: string):void {
