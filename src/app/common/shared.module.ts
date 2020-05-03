@@ -20,6 +20,7 @@ import { HeaderComponent } from './header/header.component';
 import { RouterModule } from '@angular/router';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatRippleModule } from '@angular/material/core';
+import { CommonModule } from '@angular/common';
 
 
 /**
@@ -40,6 +41,7 @@ import { MatRippleModule } from '@angular/material/core';
     BrowserAnimationsModule,
     MatCheckboxModule,
     MatButtonModule,
+    CommonModule,
     MatCardModule,
     MatInputModule,
     MatTabsModule,

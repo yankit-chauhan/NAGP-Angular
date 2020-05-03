@@ -30,4 +30,16 @@ describe('DashboardComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should render country data', () => {
+    expect(component.countryData).not.toBeNull();
+  });
+
+  it('should render states data', () => {
+    expect(component.statesData).not.toBeNull();
+  });
+
+  it(`should have as title 'Dashboard'`, () => {
+    expect(component.pageTitle).toEqual('Dashboard');
+  });
 });

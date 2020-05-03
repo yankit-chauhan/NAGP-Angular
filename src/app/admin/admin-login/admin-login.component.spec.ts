@@ -6,6 +6,8 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 import { Overlay } from '@angular/cdk/overlay';
 import { AdminLoginComponent } from './admin-login.component';
 import { FormBuilder } from '@angular/forms';
+import { UserService } from 'src/app/services/user.service';
+import { IUser } from 'src/app/model/IUser';
 
 describe('AdminLoginComponent', () => {
   let component: AdminLoginComponent;
@@ -23,7 +25,8 @@ describe('AdminLoginComponent', () => {
       providers: [
         MatSnackBar,
         Overlay,
-        FormBuilder
+        FormBuilder,
+        UserService
       ]
     })
       .compileComponents();
@@ -38,4 +41,10 @@ describe('AdminLoginComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it(`should have as title 'Admin Login'`, () => {
+    expect(component.pageTitle).toEqual('Admin Login');
+  });
 });
+
+

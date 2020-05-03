@@ -20,7 +20,7 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'covid19-tracker'`, () => {
+  it(`should have as title 'Covid19 Tracker'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
     expect(app.pageTitle).toEqual('Covid19 Tracker');

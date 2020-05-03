@@ -10,6 +10,7 @@ export class PageNotFoundComponent implements OnInit {
 
   constructor(private route: Router) { }
 
+  pageTitle: string = "Page Note Found";
   ngOnInit(): void {
   }
 

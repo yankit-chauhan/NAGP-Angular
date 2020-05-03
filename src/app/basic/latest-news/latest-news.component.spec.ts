@@ -30,4 +30,8 @@ describe('LatestNewsComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it(`should have as title 'Latest News'`, () => {
+    expect(component.pageTitle).toEqual('Latest News');
+  });
 });

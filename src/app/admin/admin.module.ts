@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { AdminLoginComponent } from './admin-login/admin-login.component';
 import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule } from '@angular/forms';
-import { SharedMaterialModule } from '../common/common-material.module';
+import { SharedMaterialModule } from '../common/shared.module';
 import { AdminRoutingModule } from './admin-routing.module';
 import { AdminDashboardComponent } from './dashboard/admin-dashboard.component';
 import { AddNewsComponent } from './add-news/add-news.component';

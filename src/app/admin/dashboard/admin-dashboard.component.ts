@@ -12,9 +12,7 @@ export class AdminDashboardComponent {
     pageTitle: string = "Admin Dashboard";
     latestNews: ILatestNews[];
 
-    constructor(private latestNewsService: LatestNewsService, private _snackBar: MatSnackBar, private route: Router) {
-
-    }
+    constructor(private latestNewsService: LatestNewsService, private _snackBar: MatSnackBar, private route: Router) { }
 
     ngOnInit(): void {
         this.getAllLatestNews();

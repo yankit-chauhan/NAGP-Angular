@@ -7,7 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { AdminModule } from './admin/admin.module';
 import { DashboardModule } from './basic/dashboard.module';
-import { SharedMaterialModule } from './common/common-material.module';
+import { SharedMaterialModule } from './common/shared.module';
 import { RouterModule } from '@angular/router';
 import { PageNotFoundModule } from './common/pagenotfound/pagenotfound.module';
 

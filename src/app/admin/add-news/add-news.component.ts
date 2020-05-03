@@ -6,7 +6,6 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 
 @Component({
-  selector: 'app-add-news',
   templateUrl: './add-news.component.html',
   styleUrls: ['./add-news.component.css']
 })

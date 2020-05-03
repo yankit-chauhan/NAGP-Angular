@@ -38,4 +38,8 @@ describe('AddNewsComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it(`should have as title 'Add New News'`, () => {
+    expect(component.pageTitle).toEqual('Add New News');
+  });
 });

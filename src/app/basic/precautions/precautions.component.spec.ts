@@ -24,4 +24,8 @@ describe('PrecautionsComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it(`should have as title 'Precautions'`, () => {
+    expect(component.pageTitle).toEqual('Precautions');
+  });
 });

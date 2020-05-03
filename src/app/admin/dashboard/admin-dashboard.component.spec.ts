@@ -36,4 +36,8 @@ describe('AdminDashboardComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it(`should have as title 'Admin Dashboard'`, () => {
+    expect(component.pageTitle).toEqual('Admin Dashboard');
+  });
 });

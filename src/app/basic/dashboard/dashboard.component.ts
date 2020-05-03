@@ -10,6 +10,7 @@ import { IDistrictData } from 'src/app/model/IDistrictsStatesData';
 })
 export class DashboardComponent implements OnInit {
 
+  pageTitle: string = "Dashboard";
   countryData: IDistributedData;
   statesData: IDistributedData[];
   districtsData: Map<string, IDistrictData[]>;

@@ -10,6 +10,7 @@ import { LatestNewsService } from 'src/app/services/latest-news.service';
 export class LatestNewsComponent implements OnInit {
 
   latestNews: ILatestNews[];
+  pageTitle: string = "Latest News";
 
   constructor(private latestNewsService: LatestNewsService) {
 
