@@ -1,12 +1,10 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AdminLoginComponent } from './admin/admin-login/admin-login.component';
-import { DashboardComponent } from './basic/dashboard/dashboard.component';
 import { dashboardRoutes } from './basic/dashboard-routing.module';
 import { adminRoutes } from './admin/admin-routing.module';
 import { CommonModule } from '@angular/common';
 import { PageNotFoundComponent } from './common/pagenotfound/page-not-found/page-not-found.component';
-import { AdminDashboardComponent } from './admin/dashboard/admin-dashboard.component';
 import { DashboardCanActivateGuard } from './admin/dashboard/dashboard-can-activate.guard';
 import { LoginCanActivateGuard } from './admin/admin-login/login-can-activate.guard';
 
@@ -19,7 +17,6 @@ export const routes: Routes = [
   },
   {
     path: 'dashboard',
-    component: DashboardComponent,
     children: [...dashboardRoutes]
   },
   {
@@ -29,7 +26,6 @@ export const routes: Routes = [
   },
   {
     path: 'admindashboard',
-    component: AdminDashboardComponent,
     children: [...adminRoutes],
     canActivate: [DashboardCanActivateGuard]
   },

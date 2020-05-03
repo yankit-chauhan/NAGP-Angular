@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ILatestNews } from 'src/app/model/ILatestNews';
 import { LatestNewsService } from 'src/app/services/latest-news.service';
-import { ToastrService } from 'ngx-toastr';
 import { Router } from '@angular/router';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';

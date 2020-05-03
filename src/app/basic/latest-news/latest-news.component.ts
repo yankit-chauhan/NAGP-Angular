@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ILatestNews } from 'src/app/model/ILatestNews';
 import { LatestNewsService } from 'src/app/services/latest-news.service';
-import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-latest-news',

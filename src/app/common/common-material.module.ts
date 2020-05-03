@@ -15,14 +15,11 @@ import { MatTableModule } from '@angular/material/table';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import {MatExpansionModule} from '@angular/material/expansion';
 
-import { ToastrModule } from 'ngx-toastr';
-
 import { NgModule } from '@angular/core';
 import { HeaderComponent } from './header/header.component';
 import { RouterModule } from '@angular/router';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatRippleModule } from '@angular/material/core';
-import { PageNotFoundComponent } from './pagenotfound/page-not-found/page-not-found.component';
 
 
 /**
@@ -49,7 +46,6 @@ import { PageNotFoundComponent } from './pagenotfound/page-not-found/page-not-fo
     MatToolbarModule,
     MatIconModule,
     MatSelectModule,
-    ToastrModule.forRoot(),
     MatGridListModule
   ],
   exports: [
@@ -70,7 +66,6 @@ import { PageNotFoundComponent } from './pagenotfound/page-not-found/page-not-fo
     MatToolbarModule,
     MatIconModule,
     MatSelectModule,
-    ToastrModule,
     HeaderComponent,
     MatGridListModule
   ]

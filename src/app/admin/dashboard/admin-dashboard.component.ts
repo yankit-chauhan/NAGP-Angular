@@ -34,11 +34,6 @@ export class AdminDashboardComponent {
                 duration: 2000,
             });
             this.getAllLatestNews();
-
-            // this.latestNews.splice(index, 1);
-            // this._snackBar.open('Admin Portal', 'Record Deleted!', {
-            //     duration: 2000,
-            // });
         }
     }
 

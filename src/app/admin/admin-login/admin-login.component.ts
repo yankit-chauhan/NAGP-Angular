@@ -3,7 +3,7 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { UserService } from 'src/app/services/user.service';
 import { IUser } from 'src/app/model/IUser';
 import { Router } from '@angular/router';
-import {MatSnackBar} from '@angular/material/snack-bar';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Component({
   templateUrl: './admin-login.component.html',
@@ -43,7 +43,7 @@ export class AdminLoginComponent implements OnInit {
       });
     } else {
       this._snackBar.open('Admin Portal', 'Please enter valid credentials!', {
-        duration:4000,
+        duration: 4000,
       });
     }
   }
