@@ -1,5 +1,5 @@
 {
     "/api": {
-        "target": "http://localhost:3000"
+        "target": "process.env.PORT || http://localhost:3000"
     }
 }
