@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'covid19-tracker';
+  [x: string]: any;
+  pageTitle: string = 'Covid19 Tracker';
 }

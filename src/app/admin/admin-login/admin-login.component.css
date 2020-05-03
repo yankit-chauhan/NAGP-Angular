@@ -1,0 +1,38 @@
+
+mat-card-title {
+    color: #3f51b5;
+    font-size: 24px;
+}
+
+mat-card-header{
+    padding: 5px;
+    border-bottom: 3px solid #ff4081;
+}
+
+mat-form-field {
+    width: 100%;
+    display: block;
+}
+
+mat-card {
+    max-width: 400px;
+    margin: auto;
+    position: relative;
+    text-align: center;
+    opacity: 0.9;
+}
+
+.form-div {
+    padding: 3em 3em 0em 3em;
+    justify-content: center
+}
+
+.back {
+    height: 100vh;
+    padding-top: 10%;
+    background-image: url(/assets/images/login-back.jpg);
+}
+
+.icon {
+    transform: scale(1.5);
+}

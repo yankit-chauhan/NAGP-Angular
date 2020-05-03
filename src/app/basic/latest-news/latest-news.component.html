@@ -1,0 +1,11 @@
+<div *ngIf="latestNews && latestNews.length" class="back">
+        <mat-card class="internal" *ngFor="let news of latestNews">
+            <mat-card-header>
+                <mat-card-title class="break heading">{{ news.heading | uppercase}}</mat-card-title>
+            </mat-card-header>
+            <mat-card-content class="break">
+                {{ news.news }}
+            </mat-card-content>
+        </mat-card>
+    <br />
+</div>

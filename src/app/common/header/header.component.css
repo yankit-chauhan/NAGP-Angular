@@ -1,0 +1,23 @@
+.spacer {
+    flex: 1 1 auto;
+}
+
+.title {
+    font-size: xx-large;
+}
+
+.btn-log {
+    font-size: medium;
+    font-weight: bold;
+}
+
+.nav-btn {
+    font-size: medium;
+    font-weight: 500;
+}
+
+.head-nav {
+    background-color: black;
+    color: white;
+    box-shadow: 0 3px 5px -1px rgba(0, 0, 0, .2), 0 6px 10px 0 rgba(0, 0, 0, .14), 0 1px 18px 0 rgba(0, 0, 0, .12);
+}

@@ -1,0 +1,13 @@
+.break {
+    word-break: keep-all;
+    white-space: pre-line;
+}
+
+
+.back {
+    min-height: 100vh;
+    padding-top: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+    background-color: rgb(204, 204, 204);
+}

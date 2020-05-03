@@ -1,0 +1,33 @@
+<app-header></app-header>
+<div class="back">
+    <mat-card class="box">
+        <mat-card-header>
+            <mat-card-title><strong>{{pageTitle | uppercase}}</strong></mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <form novalidate (ngSubmit)="login(loginForm.value)" [formGroup]="loginForm" class="form-div">
+                    <mat-form-field class="field-container">
+                        <mat-label>User Name</mat-label>
+                        <input matInput placeholder="User Name" formControlName="username" required>
+                        <mat-error *ngIf="loginForm.get('username').invalid">{{getUsernameErrorMessage()}}</mat-error>
+                    </mat-form-field>
+
+                    <mat-form-field class="field-container">
+                        <mat-label>Password</mat-label>
+                        <input matInput placeholder="Password" formControlName="password"
+                            [type]="hide ? 'password' : 'text'" required>
+                        <a class="icon" mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+                            [attr.aria-pressed]="hide">
+                            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                        </a>
+                        <mat-error *ngIf="loginForm.get('password').invalid">{{getPasswordErrorMessage()}}</mat-error>
+                    </mat-form-field>
+
+                    <mat-card-actions>
+                        <button type="submit" mat-raised-button color="accent"
+                            [disabled]="!loginForm.valid" style="width: 100%;">Login</button>
+                    </mat-card-actions>
+            </form>
+        </mat-card-content>
+    </mat-card>
+</div>

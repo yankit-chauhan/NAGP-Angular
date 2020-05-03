@@ -1,0 +1,87 @@
+mat-card {
+    max-width: 90%;
+    margin: 2em auto;
+}
+
+mat-card-title {
+    font-size: xxx-large;
+    font-weight: bolder;
+    color: rgb(90, 60, 140);
+}
+
+mat-card-subtitle {
+    font-size: x-large;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.back {
+    background-image: url(/assets/images/Crowd-with-face-mask.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sec-title {
+    word-break: keep-all;
+    display: inline-flex;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.collect {
+    flex-direction: row;
+    width: 70%;
+}
+
+.main {
+    max-width: 80%;
+    margin: 2em auto;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    opacity: 0.9;
+}
+
+.main-2 {
+    max-width: 80%;
+    margin: 2em auto;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    opacity: 0.9;
+}
+
+.sec-content {
+    word-break: keep-all;
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+.main-img {
+    width: 25%;
+    margin: 0px 0px 0px 0px;
+    padding: 30px;
+}
+
+img {
+    max-width: 200px;
+    border: none;
+}
+
+.sec-heading {
+    font-size: medium;
+    text-align: right;
+}
+
+.inner {
+    max-width: 95%;
+    margin: 1em auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.second-heading {
+    color: rgb(201, 197, 197);
+    font-weight: bolder;
+    text-align: right;
+}

@@ -1,0 +1,38 @@
+mat-card {
+    max-width: 95%;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+.internal {
+    max-width: 100%;
+    margin-bottom: 2em;
+    opacity: 0.7;
+}
+
+mat-card-content {
+    font-size: large;
+}
+
+.break {
+    white-space: pre-line;
+    color: black;
+    word-break: keep-all;
+}
+
+.back {
+    background-image: url(/assets/images/ccb.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 1000px;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 3%;
+}
+
+.heading {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-bottom: 3px black solid;
+    font-size: x-large;
+    font-style: italic;
+}

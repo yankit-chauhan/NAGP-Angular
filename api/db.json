@@ -1,0 +1,36 @@
+{
+  "news": [
+    {
+      "heading": "Coronavirus vaccine by September? Oxford Group leaps ahead.",
+      "news": "NEW YORK: In the worldwide race for a vaccine to stop Covid-19, the laboratory sprinting fastest is at Oxford University. Most other teams have had to start with small clinical trials of a few hundred participants to demonstrate safety. But scientists at the university’s Jenner Institute had a head start on a vaccine, having proved in previous trials that similar inoculations — including one last year against an earlier coronavirus — were harmless to humans.\n\nThat has enabled them to leap ahead and schedule tests of their new coronavirus vaccine involving more than 6,000 people by the end of next month, hoping to show not only that it is safe, but also that it works. The Oxford scientists now say that with an emergency approval from regulators, the first few million doses of their vaccine could be available by September — at least several months ahead of any of the other announced efforts — if it proves to be effective. Now, they have received promising news suggesting that it might.\n",
+      "id": 7
+    },
+    {
+      "heading": "Fauci Says It's 'Doable' To Have Millions Of Doses Of COVID-19 Vaccine By January",
+      "news": "There's a chance that hundreds of millions of doses of a potential COVID-19 vaccine could be available by early next year, Dr. Anthony Fauci, a key member of the White House coronavirus task force, said Thursday, even though the federal government has not approved a vaccine against the virus.\n\nIn an appearance on NBC's Today Show, Fauci was asked whether he thought it was \"in the realm of possibility\" to have a potential vaccine ready for wide distribution by January.\n\n\"I do,\" Fauci replied. \"I mean, I'm obviously part of the team that's involved in that.\"\n\nFauci, who heads the National Institute of Allergy and Infectious Diseases, noted that the ideal plan for a potential vaccine is to ensure it is safe and effective — and can be rapidly scaled up for distribution.\n\nOf course, the Food and Drug Administration has not approved a vaccine for the coronavirus. Noting that vaccine trials are still in the early phase, Fauci added that to accelerate production, the companies making the medicine would need to do so \"at risk.\"\n",
+      "id": 8
+    },
+    {
+      "heading": "Coronavirus vaccines enter human trials: An overview of where we stand",
+      "news": "In humanity's fight against the novel coronavirus, vaccines have become the Holy Grail. The only way the threat posed by the current pandemic ends is if the human population develops immunity to the novel coronavirus. This immunity can either be acquired naturally, for which the virus will have to infect a large chunk of the global population or be induced with the help of worldwide vaccination programs.\n\nThe first alternative is akin to letting the novel coronavirus run its course and can have devastating consequences. Which is why the second option is our best -- and, perhaps, the only -- bet against the fast-spreading virus. And, there is hope.\n\nThe novel coronavirus's remarkable pace is matched by equally rapid advances made in science. It's just been months since the novel coronavirus surfaced in humans, and scientists have already been able to launch projects to identify and develop vaccines to halt the virus's worldwide march.\n\nAccording to the World Health Organisation's global database of research into the novel coronavirus, there are currently seven vaccine candidates being tried on humans. In this report, we take a look at those prospects (with a special mention for efforts being made in India) and give you a brief overview of the race to develop a novel coronavirus vaccine.\n\nBefore we delve in, a word about timelines: Vaccine research is a long process that usually involves at least three phases of clinical, or human, trials. The number of people being given an experimental vaccine increases at every stage with the ultimate goal of testing for safety, side-effects, and of course, the ability to induce immunity. This can take up to a decade.",
+      "id": 9
+    },
+    {
+      "heading": "Covid-19 vaccine may take at least 9 months: Bill Gates",
+      "news": "SAN FRANCISCO: While it appears that only a COVID-19 vaccine may take us back to normal, its development may take at least nine months to two years, billionaire philanthropist Bill Gates has said.\n\nEven though several drugs are also being tested to treat COVID-19, Gates believes the perfect drug that might help the world go back to the way things were in December before the pandemic is far from sight.\n\nMost of the drug candidates right now are nowhere near that powerful. They could save a lot of lives, but they aren't enough to get us back to normal,&quot; the Microsoft co-founder wrote in his GatesNotes blog on Thursday. In the absence of an \"almost perfect drug to treat COVID-19\", it becomes imperative that every person on the planet gets vaccinated against coronavirus. \"Realistically, if we're going to return to normal, we need to develop a safe, effective vaccine. We need to make billions of doses, we need to get them out to every part of the world, and we need all of this to happen as quickly as possible\", he said. While vaccine development usually takes around five years, Gates believes that scientists may come up with a coronavirus vaccine within 9 months to two years' time.",
+      "id": 10
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "username": "yankit",
+      "password": "yankit"
+    },
+    {
+      "id": 2,
+      "username": "admin",
+      "password": "nimda"
+    }
+  ]
+}

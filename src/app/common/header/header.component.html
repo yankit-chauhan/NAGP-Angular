@@ -1,0 +1,32 @@
+<mat-toolbar class="head-nav">
+    <mat-toolbar-row>
+        <span class="title">COVID 19 TRACKER</span>
+        <button type="button" mat-button class="nav-btn" routerLinkActive='active' [routerLink]="['/dashboard']">
+            <mat-icon color="accent">home</mat-icon> Home
+        </button>
+        <button type="button" mat-button class="nav-btn" routerLinkActive='active' [routerLink]="['/dashboard/latest']">
+            Latest News
+        </button>
+        <button type="button" mat-button class="nav-btn" routerLinkActive='active' [routerLink]="['/dashboard/precautions']">
+            Precautions
+        </button>
+        <span class="spacer"></span>
+        <button *ngIf="isLoggedIn" type="button" mat-button class="nav-btn" routerLinkActive='active'
+            [routerLink]="['/admindashboard']">
+            Dashboard
+        </button>
+        <button *ngIf="isLoggedIn" type="button" mat-button class="nav-btn" routerLinkActive='active'
+            [routerLink]="['/admindashboard/addNews']">
+            Add News
+        </button>
+        <button class="btn-log" *ngIf="isLoggedIn" type="button" mat-button color="primary" (click)="logout()">
+            <mat-icon>account_circle</mat-icon> {{username | uppercase}}
+        </button>
+        <button class="btn-log" *ngIf="!isLoggedIn" type="button" mat-button color="accent" (click)="login()">
+            <mat-icon>account_circle</mat-icon> LOGIN
+        </button>
+    </mat-toolbar-row>
+</mat-toolbar>
+<div class='contaniner'>
+    <router-outlet></router-outlet>
+</div>

@@ -1,0 +1,35 @@
+<app-header></app-header>
+<div class="back">
+    <mat-card>
+        <mat-card-header>
+            <mat-card-title><strong>{{pageTitle | uppercase}}</strong></mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <table class="table" *ngIf="latestNews && latestNews.length; else noNews">
+                <thead>
+                    <tr>
+                        <th>HEADING</th>
+                        <th>NEWS</th>
+                        <th style="text-align: right;">ACTION</th>
+                    </tr>
+                    <tr *ngFor="let news of latestNews">
+                        <td class="break">{{ news.heading }}</td>
+                        <td class="break">{{ news.news }}</td>
+                        <td style="text-align: right;">
+                            <button (click)="deleteNews(news.id)" class="btn btn-danger">
+                                Delete News
+                            </button>
+                        </td>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+            <ng-template #noNews>
+                <p>
+                    No News Available
+                </p>
+            </ng-template>
+        </mat-card-content>
+    </mat-card>
+    <br />
+</div>

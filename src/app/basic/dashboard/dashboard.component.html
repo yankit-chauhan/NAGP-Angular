@@ -1,0 +1,87 @@
+<app-header></app-header>
+<div class="back">
+    <div *ngIf="countryData" class="countryData">
+        <mat-grid-list cols="1" rowHeight=50px>
+            <mat-grid-tile style="color: rgb(4, 0, 255); font-size: larger;">
+                {{countryData.lastupdatedtime}}
+            </mat-grid-tile>
+        </mat-grid-list>
+        <mat-grid-list cols="4" rowHeight=100px>
+            <mat-grid-tile style="color: rgb(255, 115, 0); font-size: larger;">
+                Confirmed<br />[+{{countryData.deltaconfirmed}}]<br />{{countryData.confirmed}}
+            </mat-grid-tile>
+            <mat-grid-tile style="color: rgb(0, 153, 255); font-size: larger;">
+                Active<br /><br />{{countryData.active}}
+            </mat-grid-tile>
+            <mat-grid-tile style="color: rgb(72, 248, 72); font-size: larger;">
+                Recovered<br />[+{{countryData.deltarecovered}}]<br />{{countryData.recovered}}
+            </mat-grid-tile>
+            <mat-grid-tile style="color: rgb(255, 0, 0); font-size: larger;">
+                Decreased<br />[+{{countryData.deltadeaths}}]<br />{{countryData.deaths}}
+            </mat-grid-tile>
+        </mat-grid-list>
+    </div>
+
+    <table mat-table [dataSource]="statesData" class="mat-elevation-z8 table-hover table-striped back-trans">
+        <ng-container matColumnDef="state">
+            <th mat-header-cell *matHeaderCellDef class="table-head"> State </th>
+            <td mat-cell *matCellDef="let element" style="font-weight: bold;"> {{element.state}} </td>
+        </ng-container>
+        <ng-container matColumnDef="confirmed">
+            <th mat-header-cell *matHeaderCellDef class="table-head"> Confirmed </th>
+            <td mat-cell *matCellDef="let element">
+                <p *ngIf="element.deltaconfirmed > 0" style="color: rgb(255, 115, 0); font-weight: bold;">
+                    <mat-icon>arrow_upward</mat-icon>{{element.deltaconfirmed}}
+                </p>{{element.confirmed}}
+            </td>
+        </ng-container>
+        <ng-container matColumnDef="active">
+            <th mat-header-cell *matHeaderCellDef class="table-head"> Active </th>
+            <td mat-cell *matCellDef="let element"> {{element.active}} </td>
+        </ng-container>
+        <ng-container matColumnDef="recovered">
+            <th mat-header-cell *matHeaderCellDef class="table-head"> Recovered </th>
+            <td mat-cell *matCellDef="let element">
+                <p *ngIf="element.deltarecovered > 0" style="color: rgb(72, 248, 72); font-weight: bold;">
+                    <mat-icon>arrow_upward</mat-icon>{{element.deltarecovered}}
+                </p> {{element.recovered}}
+            </td>
+        </ng-container>
+        <ng-container matColumnDef="deaths">
+            <th mat-header-cell *matHeaderCellDef class="table-head"> Deaths </th>
+            <td mat-cell *matCellDef="let element">
+                <p *ngIf="element.deltadeaths > 0" style="color: rgb(255, 0, 0); font-weight: bold;">
+                    <mat-icon>arrow_upward</mat-icon>{{element.deltadeaths}}
+                </p> {{element.deaths}}
+            </td>
+        </ng-container>
+        <tr mat-header-row *matHeaderRowDef="displayedColumns" style="text-align: center;"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"
+            (click)="getDistrictData(row);scrollTo('div.target');" style="cursor: pointer;"></tr>
+    </table>
+
+    <br />
+    <div class="target">
+        <table *ngIf="districtData" class="mat-elevation-z8 table table-striped dist-table">
+            <thead>
+                <tr>
+                    <th>District</th>
+                    <th>Confirmed</th>
+                    <th>Active</th>
+                    <th>Recovered</th>
+                    <th>Deceased</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let d of districtData | keyvalue">
+                    <td>{{ d.key }}</td>
+                    <td>{{ d.value.confirmed }}</td>
+                    <td>{{ d.value.active }}</td>
+                    <td>{{ d.value.recovered }}</td>
+                    <td>{{ d.value.deceased }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <br />
+</div>
