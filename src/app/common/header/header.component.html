@@ -19,7 +19,7 @@
             [routerLink]="['/admindashboard/addNews']">
             Add News
         </button>
-        <button class="btn-log" *ngIf="isLoggedIn" type="button" mat-button color="primary" (click)="logout()">
+        <button class="btn-log" *ngIf="isLoggedIn" type="button" mat-button color="warn" (click)="logout()">
             <mat-icon>account_circle</mat-icon> {{username | uppercase}}
         </button>
         <button class="btn-log" *ngIf="!isLoggedIn" type="button" mat-button color="accent" (click)="login()">

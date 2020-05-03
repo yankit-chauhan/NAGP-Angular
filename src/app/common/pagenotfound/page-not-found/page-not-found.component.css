@@ -1,12 +1,15 @@
 h1 {
-    color: #ff4081;
+    color: white;
+    font-size: 100px;
+    font-weight: bolder;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .jumbotron{
     margin-top: 6em;
-    justify-content: center
+    justify-content: center;
 }
 
-div {
-    margin: 2em;
+button {
+    margin-top: 4em;
 }
