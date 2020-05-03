@@ -10,7 +10,7 @@ import { Observable } from 'rxjs';
 /** This is a User service. */
 export class UserService {
 
-    private apiUrl: string = "/api/users";
+    private apiUrl: string = "https://json-db-server-board.herokuapp.com/users";
     private users: IUser[];
 
     constructor(private http: HttpClient) {

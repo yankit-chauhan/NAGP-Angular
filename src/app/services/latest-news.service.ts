@@ -13,7 +13,7 @@ const httpOptions = {
 })
 export class LatestNewsService {
 
-  private apiUrl: string = "/api/news";
+  private apiUrl: string = "https://json-db-server-board.herokuapp.com/news";
   constructor(private http: HttpClient) { }
 
   getLatestNews(): Observable<ILatestNews[]> {
