@@ -16,7 +16,7 @@ mat-card-subtitle {
 }
 
 .back {
-    background-image: url(/assets/images/Crowd-with-face-mask.jpg);
+    background-image: url(https://yankit-chauhan.github.io/NAGP-Angular/assets/images/Crowd-with-face-mask.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
