@@ -30,7 +30,7 @@ mat-card {
 .back {
     height: 100vh;
     padding-top: 10%;
-    background-image: url(/assets/images/login-back.jpg);
+    background-image: url(https://yankit-chauhan.github.io/NAGP-Angular/assets/images/login-back.jpg);
 }
 
 .icon {
